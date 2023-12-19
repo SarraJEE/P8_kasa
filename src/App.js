@@ -1,9 +1,10 @@
 import React from "react";
 import { Routes, Route,  BrowserRouter } from "react-router-dom";
 import "./sass/index.scss";
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import About from "./pages/About/About";
 import NoFound from "./pages/NoFound/NoFound";
 
 const App = () => {
@@ -13,6 +14,8 @@ const App = () => {
 
       <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+
       <Route path="*" element={<NoFound />} />
        
       </Routes>

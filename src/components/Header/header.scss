@@ -5,7 +5,7 @@
     margin-top: 45px;
     
 
-    &__fig {
+    &_fig {
         display: flex;
         align-items: flex-start;
         
@@ -16,4 +16,25 @@
             height: 68px;
         }
     }
+
+    &_nav {
+        ul {
+            display: flex;
+            flex-direction: row;
+      
+          }
+      
+          &_item {
+            color: #FF6060;
+            font-size: 24px;
+            padding-left: 0.8rem;
+      
+      
+            &:hover,
+            &:focus {
+              text-decoration-line: underline;
+            }
+          }
+    }
+
 }
