@@ -9,6 +9,7 @@ const Home = () => {
         <Banner texte="Chez vous, partout et ailleurs" image={imgHomeBanner} />
         <Cards/>
       </main>
+      
     </div>
   );
 };
