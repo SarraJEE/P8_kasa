@@ -1,18 +1,13 @@
 import React from "react";
-
-
+import Error from "../../components/Error/Error";
 
 const NoFound = () => {
   return (
-    <>
-      <div className="NoFound">
+   
+    <main>
+    <Error />
+  </main>
        
-        <main>
-         <h1>page erreur</h1>
-        </main>
-
-      </div>
-    </>
   );
 };
 

@@ -1,8 +1,10 @@
+import Slideshow from "../../components/Slideshow/Slideshow";
+
 function Logement() {
     return (
-        <div>
-          <h1>hello Word</h1>
-        </div>
+        <main>
+          <Slideshow/>
+        </main>
     )
 }
 export default Logement;

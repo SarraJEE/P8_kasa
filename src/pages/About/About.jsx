@@ -9,7 +9,7 @@ function About() {
     return (
         <main>
         <Banner texte="" image={imgAboutBanner} alt="Image d'un paysage"/>
-        <div className="collapse_about">
+        <div>
         <Collapse
         title="Fiabilité"
         content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."

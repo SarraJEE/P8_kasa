@@ -4,7 +4,7 @@ import imgHomeBanner from "../../assets/images/banner/homeBanner.png";
 import Cards from "../../components/Cards/Cards";
 const Home = () => {
   return (
-    <div className="home">
+    <div >
       <main>
         <Banner texte="Chez vous, partout et ailleurs" image={imgHomeBanner} />
         <Cards/>
