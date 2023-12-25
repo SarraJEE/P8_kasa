@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './Collapse.scss';
 
 // Le composant Collapse accepte les propriétés (props) title et content
 export default function Collapse({ title, content }) {

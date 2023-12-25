@@ -15,6 +15,10 @@ Fiche-container {
     justify-content: space-between;
     margin-bottom: 31px;
 
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+
     &__titletags {
         display: flex;
         flex-direction: column;
@@ -32,6 +36,11 @@ Fiche-container {
                 font-weight: 500;
                 line-height: 142.6%;
 
+                @media screen and (max-width: 768px) {
+                    font-size: 18px;
+
+                }
+
             }
 
             .endroit-logement {
@@ -39,6 +48,11 @@ Fiche-container {
                 font-size: 18px;
                 font-weight: 500;
                 line-height: 142.6%;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 14px;
+
+                }
             }
         }
 
@@ -54,6 +68,11 @@ Fiche-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
 
         &__nom-prop {
             display: flex;
@@ -76,6 +95,11 @@ Fiche-container {
                 width: 64px;
                 height: 64px;
                 object-fit: cover;
+
+                @media screen and (max-width: 768px) {
+                    width: 32px;
+                    height: 32px;
+                }
             }
         }
 
@@ -86,27 +110,44 @@ Fiche-container {
             justify-content: flex-end;
             margin-top: 20px;
 
+            @media screen and (max-width: 768px) {
+                height: 18px;
+            }
+
             .etoile {
                 width: 100%;
                 height: 36px;
                 margin-right: -157px;
 
-            }
-
-            .etoileF {
-                width: 196px;
-                height: 36px;
-                margin-right: -161px;
 
             }
+
         }
     }
 }
 
 .description-centent {
-    width: 100%;
     display: flex;
-    justify-content: center;
     gap: 76px;
 
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+
+    &__description {
+        width: 60%;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+    }
+
+    &__equipement {
+        width: 60%;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+
+    }
 }
