@@ -31,7 +31,7 @@ const FicheLogement = () => {
   return (
     <>
       {ficheLogement ? (
-        <div className="Fiche-container">
+        <div>
           <Slideshow slides={ficheLogement?.pictures} />
           <section className="Fiche-logement">
             <div className="description-info">

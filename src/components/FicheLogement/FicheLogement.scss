@@ -65,11 +65,9 @@ Fiche-container {
 
 
     &__proprietaire {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
+       
         @media screen and (max-width: 768px) {
+            display: flex;
             flex-direction: row-reverse;
             justify-content: space-between;
         }
@@ -132,6 +130,7 @@ Fiche-container {
 
     @media screen and (max-width: 768px) {
         flex-direction: column;
+        gap: 20px;
     }
 
     &__description {
