@@ -1,10 +1,11 @@
-import Slideshow from "../../components/Slideshow/Slideshow";
+import FicheLogement from "../../components/FicheLogement/FicheLogement";
 
 function Logement() {
     return (
         <main>
-          <Slideshow/>
-        </main>
+        <FicheLogement />
+      </main>
+        
     )
 }
 export default Logement;

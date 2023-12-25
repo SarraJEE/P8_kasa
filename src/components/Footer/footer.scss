@@ -1,12 +1,11 @@
 .footer {
   display: flex;
-  width: 100%;
   height: 209px;
   flex-direction: column;
   align-items: center;
   gap: 28px;
   background: #000;
-  
+
   &__logo {
     margin-top: 66px;
     width: 122px;
@@ -15,6 +14,13 @@
 
   &__text-copyright {
     color: rgba(255, 255, 255, 1);
-   
+
+    @media screen and (max-width: 768px) {
+      font-size: 12px;
+      font-weight: 500;
+  
+    }
   }
+
+  
 }

@@ -1,0 +1,103 @@
+Fiche-container {
+    color: #ff6060;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.Fiche-logement {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.description-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 31px;
+
+    &__titletags {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &__title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 15px;
+
+            .titre-logement {
+                color: #FF6060;
+                font-size: 36px;
+                font-weight: 500;
+                line-height: 142.6%;
+
+            }
+
+            .endroit-logement {
+                color: #FF6060;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 142.6%;
+            }
+        }
+
+        &__tags {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+        }
+    }
+
+
+    &__proprietaire {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &__nom-prop {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 10px;
+
+            .nom-proprietaire {
+                color: #FF6060;
+                text-align: right;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 142.6%;
+            }
+
+            .photo-proprietaire {
+                border-radius: 50%;
+                width: 64px;
+                height: 64px;
+                object-fit: cover;
+            }
+        }
+
+        &__rate {
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-top: 20px;
+
+            .etoile {
+                width: 15px;
+                height: 15px;
+
+
+            }
+        }
+    }
+}
+
+.description-centent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 76px;
+
+}
