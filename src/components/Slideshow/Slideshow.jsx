@@ -5,11 +5,11 @@ function Slideshow({ slides }) {
   const [current, setCurrent] = useState(0); //je définie l'index du premier slide à 0
   const length = slides.length; //longueur du tableau de slides
 
-  /**Function pour l'image precedente */
+  /**Function pour l'image  suivante */
   const nextImage = () => {
     setCurrent(current === length - 1 ? 0 : current + 1); // on repart au premier slide quand on arrive au dernier
   };
-  /**Function pour l'image suivante */
+  /**Function pour l'image precedente */
   const prevImage = () => {
     setCurrent(current === 0 ? length - 1 : current - 1); // on repart au dernier slide quand on est au premier
   };
@@ -22,12 +22,10 @@ function Slideshow({ slides }) {
     <section className="slide">
       {length > 1 && (
         <p className="left-Arrow" onClick={prevImage}>
-          <i className="fa-solid fa-chevron-left"></i>
         </p>
       )}
       {length > 1 && (
         <p className="right-Arrow" onClick={nextImage}>
-          <i className="fa-solid fa-chevron-right"></i>
         </p>
       )}
       {slides.map((image, index) => {
@@ -37,9 +35,9 @@ function Slideshow({ slides }) {
             className={index === current ? "slider active" : "slider"}
           >
             {index === current && (
-              <img src={image} alt="img-appartement" className="slide__image" />
+              <img src={image} alt="img-appartement" className="slider__image" />
             )}
-            {index === current && length > 1 && (
+            {length > 1 && (
               <span className="slider__number">
                 {current + 1}/{length}
               </span>

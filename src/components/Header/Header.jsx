@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
+    <>
     <header className="header">
      <figure className="header_fig">
         <img className="logo" src={logo} alt="logo de l'agence kasa" />
@@ -15,5 +16,6 @@ export default function Header() {
       </nav>
 
     </header>
+    </>
   );
 }

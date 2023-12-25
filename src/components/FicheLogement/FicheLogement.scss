@@ -67,6 +67,8 @@ Fiche-container {
                 font-size: 18px;
                 font-weight: 500;
                 line-height: 142.6%;
+                white-space: pre-wrap;
+                width: 93px;
             }
 
             .photo-proprietaire {
@@ -85,9 +87,16 @@ Fiche-container {
             margin-top: 20px;
 
             .etoile {
-                width: 15px;
-                height: 15px;
+                width: 100%;
+                height: 36px;
+                margin-right: -157px;
 
+            }
+
+            .etoileF {
+                width: 196px;
+                height: 36px;
+                margin-right: -161px;
 
             }
         }
