@@ -7,9 +7,7 @@ function Cards() {
             {Data.map(({ id, title, cover }) => (
                 <Link className="card" to={`Logement/${id}`} key={id}>
                     <img className="card_img" src={cover} alt="Aperçu du logement" />
-                    <div className="card_title">
-                        <h2>{title}</h2>
-                    </div>
+                    <h2 className="card_title">{title}</h2>
                 </Link>
             ))}
         </div>

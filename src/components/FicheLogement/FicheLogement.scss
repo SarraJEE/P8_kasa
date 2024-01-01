@@ -1,4 +1,4 @@
-Fiche-container {
+.Fiche-container {
     color: #ff6060;
     flex-direction: column;
     margin-bottom: 20px;
@@ -38,7 +38,6 @@ Fiche-container {
 
                 @media screen and (max-width: 768px) {
                     font-size: 18px;
-
                 }
 
             }
@@ -63,9 +62,8 @@ Fiche-container {
         }
     }
 
-
     &__proprietaire {
-       
+
         @media screen and (max-width: 768px) {
             display: flex;
             flex-direction: row-reverse;
@@ -115,9 +113,7 @@ Fiche-container {
             .etoile {
                 width: 100%;
                 height: 36px;
-                margin-right: -157px;
-
-
+                margin-right: -157px;   
             }
 
         }

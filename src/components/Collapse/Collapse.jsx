@@ -18,7 +18,7 @@ export default function Collapse({ title, content }) {
         {title}
       </div>
       {/* Div contenant le contenu du Collapse, avec une classe "hidden" si le Collapse est fermé */}
-      <div className={`Collapse-content ${isOpen ? '' : 'hidden'}`}>
+      <div className={`Collapse-content ${isOpen ? 'animated' : 'hidden'}`}>
         {content}
       </div>
     </div>
