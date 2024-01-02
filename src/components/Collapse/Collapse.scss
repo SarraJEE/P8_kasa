@@ -33,12 +33,11 @@
     }
 
     &-content {
+        overflow: hidden;
         padding: 20px;
         background-color: #F6F6F6;
         color: #FF6060; 
-        overflow: hidden;
        
-
         p {
             line-height: 22px;
         }
@@ -47,15 +46,15 @@
     }
 
     .hidden {
-        display: none;
-        transition: opacity 0.4s ease-in-out, height 0.4s 0.4s ease-in-out;
-
+        
+        height: 0;
+        padding: 0 20px;
+        transition: padding 0.4s ease-in-out, max-height 0.4s ease-in-out;
     }
 
-    .animated {
-        opacity: 1;
+     .animated {
         max-height: 1000px;
-        transition: height 0.4s ease-in-out, opacity 0.4s 0.4s ease-in-out;
+        transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
     }
 
 
